@@ -17,8 +17,8 @@ const style = {
     fontWeight: 700,
   },
   img: {
-    height: 680,
-    width: 400,
+    height: 600,
+    width: 300,
     borderRadius: "20px",
   },
 };
@@ -26,23 +26,25 @@ const style = {
 const Mobile = () => {
   return (
     <>
-      <div className="row" style={{ marginTop: 100, marginBottom: 100 }}>
+      <div className="row" style={{ marginTop: 80, marginBottom: 80 }}>
         <div className="col-md-6">
           <div style={{ marginTop: 100, width: 500 }} className="padLeft">
             {/* <h3 className="text-danger" style={style.header}>
               Project 1
             </h3> */}
-            <h6 style={style.header2} className="text-secondary">
-              An Ecommerce Mobile Application
-            </h6>
-            <p className="normal-font lh-lg">
-              This is also an e-commerce application on mobile that also allows
-              users to buy utility goods for example gas and petrol. online with
-              payment gateway also implemented with Paystack.
-            </p>
-            <span className="normal-font cursor">
-              App name: <span className=" text-danger text-sm ">Pawa2u</span>
-            </span>
+            <div data-aos="fade-right" data-aos-duration="3000">
+              <h6 style={style.header2} className="text-secondary">
+                PAWA2U
+              </h6>
+              <p className="normal-font lh-lg text-light">
+                This is also an e-commerce application on mobile that also
+                allows users to buy utility goods for example gas and petrol.
+                online with payment gateway also implemented with Paystack.
+              </p>
+              <span className="normal-font cursor text-light">
+                App name: <span className=" text-danger text-sm ">Pawa2u</span>
+              </span>
+            </div>
           </div>
         </div>
         <div className="col-md-6">

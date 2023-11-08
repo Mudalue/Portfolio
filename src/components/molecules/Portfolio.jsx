@@ -22,17 +22,17 @@ const style = {
   },
   text: {
     fontSize: 16,
-    fontWeight: 600,
+    fontWeight: 200,
     lineHeight: 2,
   },
 };
 const Portfolio = () => {
   const [link, setLink] = useState("web");
   return (
-    <div className="container generalHeight" style={{ paddingTop: 100 }}>
+    <div className="container generalHeight" style={{ paddingTop: 80 }}>
       <div className="row">
         <div className="col-md-12">
-          <h4 style={style.header} className="text-center text-dark">
+          <h4 style={style.header} className="text-center text-danger">
             Experience
           </h4>
           <div className="d-flex justify-content-center align-items-center">

@@ -20,38 +20,40 @@ const style = {
     fontWeight: 700,
   },
   img: {
-    height:400,
+    height: 200,
     width: "",
-    borderRadius: "20px",
+    borderRadius: "5px",
   },
 };
 const Web = () => {
   return (
     <>
-      <div className="row" style={{ marginTop: 100, marginBottom: 100 }}>
+      <div className="row" style={{ marginTop: 80, marginBottom: 80 }}>
         <div className="col-md-6">
-          <div style={{ marginTop: 100 }} className="padLeft">
+          <div style={{ marginTop: 50 }} className="padLeft">
             {/* <h3 className="text-danger" style={style.header}>
               Project 1
             </h3> */}
-            <h6 style={style.header2} className="text-secondary">
-              A social App with Crytocurrency
-            </h6>
-            <p className="normal-font lh-lg">
-              This is an application with social media capabilties, a payment
-              gateway for advertisement using PayStack payment gateway and an
-              intended ability for users to share cryptocurrency as gift to
-              friends.
-            </p>
-            <span className="normal-font cursor">
-              Link:{" "}
-              <a
-                href="https://afriqhub.com"
-                className="text-decoration-none text-danger text-sm "
-              >
-                https://afriqhub.com
-              </a>
-            </span>
+            <div data-aos="fade-left" data-aos-duration="3000">
+              <h6 style={style.header2} className="text-secondary">
+                Afiqhub
+              </h6>
+              <p className="normal-font lh-lg text-light">
+                This is an application with social media capabilties, a payment
+                gateway for advertisement using PayStack payment gateway and an
+                intended ability for users to share cryptocurrency as gift to
+                friends.
+              </p>
+              <span className="normal-font cursor text-light">
+                Link:{" "}
+                <a
+                  href="https://afriqhub.com"
+                  className="text-decoration-none text-danger text-sm "
+                >
+                  https://afriqhub.com
+                </a>
+              </span>
+            </div>
           </div>
         </div>
         <div className="col-md-6 d-flex justify-content-center align-items-center my-2">
@@ -66,7 +68,7 @@ const Web = () => {
         </div>
       </div>
 
-      <div className="row" style={{ marginTop: 100, marginBottom: 100 }}>
+      <div className="row" style={{ marginTop: 80, marginBottom: 80 }}>
         <div className="col-md-6 d-flex justify-content-center align-items-center my-2">
           <div style={style.box}>
             <img
@@ -78,46 +80,51 @@ const Web = () => {
           </div>
         </div>
         <div className="col-md-6">
-          <div style={{ marginTop: 100 }}>
+          <div style={{ marginTop: 30 }}>
             {/* <h3 className="text-danger" style={style.header}>
               Project 2
             </h3> */}
-            <h6 style={style.header2} className="text-secondary">
-              A Vessel Logistic Application
-            </h6>
-            <p className="normal-font lh-lg">
-              This is also another application i developed that enabled a marine
-              logistic company to monitor their vessels and contents of their
-              facilities across Nigeria. It includes the integration of apis
-              with google map to produce a visual that enabled our client to
-              understand at a glace the current situation of their facilities
-            </p>
-            <span className="normal-font cursor">
-              Link:{" "}
-              <a
-                href="https://kita-dev.asikoenergy.com/login"
-                className="text-decoration-none text-danger text-sm "
-              >
-                https://kita-dev.asikoenergy.com/login
-              </a>
-            </span>
+            <div data-aos="fade-right" data-aos-duration="3000">
+              <h6 style={style.header2} className="text-secondary">
+                Kita
+              </h6>
+              <p className="normal-font lh-lg text-light">
+                This is also another application i developed that enabled a
+                marine logistic company to monitor their vessels and contents of
+                their facilities across Nigeria. It includes the integration of
+                apis with google map to produce a visual that enabled our client
+                to understand at a glace the current situation of their
+                facilities
+              </p>
+              <span className="normal-font cursor text-light">
+                Link:{" "}
+                <a
+                  href="https://kita-dev.asikoenergy.com/login"
+                  className="text-decoration-none text-danger text-sm "
+                >
+                  https://kita-dev.asikoenergy.com/login
+                </a>
+              </span>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="row" style={{ marginTop: 100, marginBottom: 100 }}>
+      <div className="row" style={{ marginTop: 80, marginBottom: 80 }}>
         <div className="col-md-6">
-          <div style={{ marginTop: 100 }} className="padLeft">
+          <div style={{ marginTop: 50 }} className="padLeft">
             {/* <h3 className="text-danger" style={style.header}>
               Project 3
             </h3> */}
-            <h6 style={style.header2} className="text-secondary">
-              An E-commerce application
+         <div data-aos="fade-left" data-aos-duration="3000">
+         <h6 style={style.header2} className="text-secondary">
+              TGF Stores
             </h6>
-            <p className="normal-font lh-lg">
+            <p className="normal-font lh-lg text-light">
               This is a basic e-commerce application with carting system to
               allow users to purchase items online
             </p>
+         </div>
             {/* <span className="normal-font cursor">
               Link:{" "}
               <a

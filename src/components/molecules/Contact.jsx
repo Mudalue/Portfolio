@@ -67,7 +67,7 @@ const Contact = () => {
               <div style={{ marginTop: 30 }}>
                 {contents.map((content) => (
                   <div style={{ display: "flex" }}>
-                    <button style={style.btn} className="btn mb-2">
+                    <button style={style.btn} className="btn mb-2" >
                       <FontAwesomeIcon icon={content.icon} />
                     </button>
                     <p className="mx-2 normal-font text-light lh-lg">

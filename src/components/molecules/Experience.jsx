@@ -34,7 +34,7 @@ const Experience = () => {
     <div className="container generalHeight">
       <div className="row">
         <div className="col-md-12">
-          <h4 style={style.header} className="text-center text-dark pt-3">
+          <h4 style={style.header} className="text-center text-danger pt-3">
             Skills and Technologies
           </h4>
         </div>

@@ -2,11 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 
 body {
-  background-color: #ebe8e2;
+  /* background-color: #ebe8e2; */
   font-family: "Montserrat", sans-serif;
   margin: 0 !important;
 }
-
+.App{
+  background-color: rgba(0, 0, 0, 0.7)
+}
+.about-pad{
+  padding: 150px 250px;
+}
 .generalHeight {
   min-height: 100vh;
 }
@@ -53,19 +58,41 @@ body {
 .box {
   height: 400px;
   width: 400px;
-  border-radius: 20px 100px;
-  border: 10px solid #DCDCDC;
+  border-radius: 50%;
+  border: 6px solid #5cb85c;
   margin-left: 100px
 }
-
+#scrollspyHeading1{
+  background-image: url(./components/assets/images/check2.jpg);
+  background-size: cover;
+  background-position: center;
+}
 /* scrollbar */
 ::-webkit-scrollbar {
-  width: 1em;
+  width: 0.1em;
+  background-color: rgba(0, 0, 0, 0.7)
 }
 
 ::-webkit-scrollbar-thumb {
   background: #ff0e0e;
   border-radius: 2px;
+}
+#fade-up-text {
+  font-size: 24px;
+  opacity: 0;
+  transform: translateY(50px); /* Start from 50px below its normal position */
+  animation: fadeUp 1s ease-in-out forwards; /* Apply the animation */
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px); /* Start position */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End position */
+  }
 }
 
 /* Responsive Styles */
@@ -81,7 +108,9 @@ body {
     height: auto;
     width: 100%;
   }
-
+  .about-pad{
+    padding: 100px 150px;
+  }
   .aboutmetext {
     padding-top: 0px;
     width: auto;
@@ -90,8 +119,8 @@ body {
   .box {
     height: 400px;
     width: 400px;
-    border-radius: 20px 100px;
-    border: 10px solid #DCDCDC;
+    border-radius: 50%;
+    border: 6px solid #5cb85c;
     margin-left: 100px
   }
 }
@@ -100,7 +129,9 @@ body {
   .padLeft {
     padding-left: 0px;
   }
-
+  .about-pad{
+    padding: 50px;
+  }
   .hero_imgContainer {
     display: none !important;
   }
@@ -122,8 +153,8 @@ body {
   .box {
     height: 300px;
     width: 300px;
-    border-radius: 20px 100px;
-    border: 10px solid #DCDCDC;
+    border-radius: 50%;
+    border: 6px solid #5cb85c;
     margin: 20px;
   }
 }

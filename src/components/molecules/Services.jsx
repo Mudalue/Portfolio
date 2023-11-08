@@ -46,11 +46,11 @@ const style = {
 };
 const Services = () => {
   return (
-    <div className="container generalHeight" style={{ paddingTop: 100 }}>
+    <div className="container generalHeight" style={{ paddingTop: 80 }}>
       <div className="row">
         <div className="col-md-12">
-          <h4 style={style.header} className="text-center text-dark">
-            Services
+          <h4 style={style.header} className="text-center text-danger">
+            My Services
           </h4>
         </div>
       </div>

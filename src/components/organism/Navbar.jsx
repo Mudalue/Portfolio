@@ -1,5 +1,5 @@
-import React from "react";
-import cv from "../assets/doc/emeka.pdf";
+import React, {useState} from "react";
+import cv from "../assets/doc/Christian_cv.pdf";
 const style = {
   Header: {
     fontSize: 35,
@@ -7,6 +7,15 @@ const style = {
   },
 };
 const Navbar = () => {
+  const [activeLink, setActiveLink] = useState("Home"); // State to track the active link
+
+  const handleNavItemClick = (link) => {
+    setActiveLink(link);
+  };
+
+  const isLinkActive = (link) => {
+    return activeLink === link ? "text-danger" : ""; // Apply "text-danger" class if the link is active
+  };
   const emailAddress = 'emekachristian511@gmail.com';
   const subject = 'Inquiry';
   const body = 'Hello,\n\nI am reaching out for...';
@@ -17,7 +26,7 @@ const Navbar = () => {
   };
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-light bg-light sticky-top"
+      className="navbar navbar-expand-lg navbar-dark bg-transparent sticky-top"
       style={{ padding: 20 }}
     >
       <div className="container-fluid">
@@ -40,12 +49,13 @@ const Navbar = () => {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="mx-2 nav-item">
               <a
-                href="#scrollspyHeading1"
-                style={{
-                  textDecoration: "none",
-                  fontWeight: 400,
-                }}
-                className="nav-link active normal-font"
+              href="#scrollspyHeading1"
+              onClick={() => handleNavItemClick("Home")}
+              style={{
+                textDecoration: "none",
+                fontWeight: 400,
+              }}
+              className={`nav-link normal-font ${isLinkActive("Home")}`}
               >
                 Home
               </a>
@@ -53,11 +63,12 @@ const Navbar = () => {
             <li className="mx-2 nav-item">
               <a
                 href="#scrollspyHeading2"
+                onClick={() => handleNavItemClick("About Me")}
                 style={{
                   textDecoration: "none",
                   fontWeight: 400,
                 }}
-                className="nav-link  normal-font"
+                className={`nav-link normal-font ${isLinkActive("About Me")}`}
               >
                 About Me
               </a>
@@ -65,11 +76,12 @@ const Navbar = () => {
             <li className="mx-2 nav-item">
               <a
                 href="#scrollspyHeading3"
+                onClick={() => handleNavItemClick("Portfolio")}
                 style={{
                   textDecoration: "none",
                   fontWeight: 400,
                 }}
-                className="nav-link normal-font"
+                className={`nav-link normal-font ${isLinkActive("Portfolio")}`}
               >
                 Portfolio
               </a>
@@ -77,11 +89,12 @@ const Navbar = () => {
             <li className="mx-2 nav-item">
               <a
                 href="#scrollspyHeading4"
+                onClick={() => handleNavItemClick("Services")}
                 style={{
                   textDecoration: "none",
                   fontWeight: 400,
                 }}
-                className="nav-link normal-font"
+                className={`nav-link normal-font ${isLinkActive("Services")}`}
               >
                 Services
               </a>
@@ -89,11 +102,12 @@ const Navbar = () => {
             <li className="mx-2 nav-item">
               <a
                 href="#scrollspyHeading5"
+                onClick={() => handleNavItemClick("Experience")}
                 style={{
                   textDecoration: "none",
                   fontWeight: 400,
                 }}
-                className="nav-link normal-font"
+                className={`nav-link normal-font ${isLinkActive("Experience")}`}
               >
                 Experience
               </a>
@@ -109,7 +123,7 @@ const Navbar = () => {
               </a>
             </div>
             <div className="mx-2">
-              <button className="btn btnText btn-outline-dark" onClick={handleContactClick}>Contact</button>
+              <button className="btn btnText btn-outline-light" onClick={handleContactClick}>Contact</button>
             </div>
           </form>
         </div>
