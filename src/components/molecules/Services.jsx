@@ -19,7 +19,7 @@ const style = {
     marginBottom: 70,
   },
   text: {
-    fontSize: 16,
+    fontSize: 15,
     fontWeight: 500,
     lineHeight: 2,
   },
@@ -49,14 +49,14 @@ const Services = () => {
     <div className="container generalHeight" style={{ paddingTop: 80 }}>
       <div className="row">
         <div className="col-md-12">
-          <h4 style={style.header} className="text-center text-danger">
+          <h4 style={style.header} className="text-center text-danger pb-3" data-aos="fade-up" data-aos-duration="3000">
             My Services
           </h4>
         </div>
       </div>
       <div className="row">
         <div className="col-md-4">
-          <div className="card bg-black">
+          <div className="card bg-black" data-aos="zoom-in-right" data-aos-duration="3000">
             <div className="card-body">
               <div>
                 <div style={style.section1}>
@@ -73,7 +73,7 @@ const Services = () => {
 
                   <h4
                     style={style.subHeader}
-                    className="text-center text-light"
+                    className="text-center text-secondary"
                   >
                     Web App Development
                   </h4>
@@ -91,7 +91,7 @@ const Services = () => {
           </div>
         </div>
         <div className="col-md-4">
-          <div className="card bg-black">
+          <div className="card bg-black" data-aos="zoom-out-up" data-aos-duration="3000">
             <div className="card-body">
               <div>
                 <div style={style.section1}>
@@ -108,7 +108,7 @@ const Services = () => {
 
                   <h4
                     style={style.subHeader}
-                    className="text-center text-light"
+                    className="text-center text-secondary"
                   >
                     Mobile App Development
                   </h4>
@@ -127,7 +127,7 @@ const Services = () => {
           </div>
         </div>
         <div className="col-md-4">
-          <div className="card bg-black">
+          <div className="card bg-black" data-aos="zoom-in-left" data-aos-duration="3000">
             <div className="card-body">
               <div>
                 <div style={style.section1}>
@@ -144,7 +144,7 @@ const Services = () => {
 
                   <h4
                     style={style.subHeader}
-                    className="text-center text-light"
+                    className="text-center text-secondary"
                   >
                     Deployment
                   </h4>

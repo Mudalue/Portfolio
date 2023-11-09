@@ -24,6 +24,7 @@ const style = {
     fontSize: 16,
     fontWeight: 200,
     lineHeight: 2,
+    textDecoration: "underline",
   },
 };
 const Portfolio = () => {
@@ -32,7 +33,7 @@ const Portfolio = () => {
     <div className="container generalHeight" style={{ paddingTop: 80 }}>
       <div className="row">
         <div className="col-md-12">
-          <h4 style={style.header} className="text-center text-danger">
+          <h4 style={style.header} className="text-center text-danger" data-aos="fade-up" data-aos-duration="3000">
             Experience
           </h4>
           <div className="d-flex justify-content-center align-items-center">
@@ -67,7 +68,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-12">
+        <div className="col-md-12 col-sm-12">
           {link === "web" ? (
             <Web />
           ) : link === "mobile" ? (

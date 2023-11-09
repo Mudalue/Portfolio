@@ -17,7 +17,7 @@ function App() {
     <div className="App bg-dark">
       <Navbar />
       <div className="m-0">
-        <div className="container-fluid m-0" id="scrollspyHeading1">
+        <div className="container-fluid m-0 generalHeight" id="scrollspyHeading1">
           <HeroSection />
         </div>
         <div id="scrollspyHeading2">

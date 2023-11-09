@@ -3,11 +3,11 @@ import {
   faBootstrap,
   faCss3,
   faDocker,
-  faEthereum,
   faHtml5,
   faJira,
   faJs,
   faNodeJs,
+  faPython,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
@@ -27,14 +27,14 @@ const Experience = () => {
     { id: 5, name: faNodeJs, color: "#68a063", title: "Node js" },
     { id: 6, name: faJs, color: "#f0db4f", title: "Javascript" },
     { id: 7, name: faJira, color: "#2962ff", title: "Jira" },
-    { id: 8, name: faEthereum, color: "#2962ff", title: "Ethereum" },
-    { id: 8, name: faDocker, color: "#0db7ed", title: "Docker" }
+    { id: 8, name: faPython, color: "#4b8bbe", title: "Python" },
+    { id: 9, name: faDocker, color: "#0db7ed", title: "Docker" }
   ];
   return (
-    <div className="container generalHeight">
+    <div className="container experience-section">
       <div className="row">
         <div className="col-md-12">
-          <h4 style={style.header} className="text-center text-danger pt-3">
+          <h4 style={style.header} className="text-center text-danger pt-3" data-aos="fade-up" data-aos-duration="3000">
             Skills and Technologies
           </h4>
         </div>
@@ -54,13 +54,13 @@ const Experience = () => {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  width: 300,
+                  width: 100,
                   paddingTop: 50,
                 }}
               >
                 <FontAwesomeIcon
                   icon={icon.name}
-                  size={"5x"}
+                  size={"3x"}
                   color={icon.color}
                 />
                 <div>

@@ -13,14 +13,24 @@ body {
   padding: 150px 250px;
 }
 .generalHeight {
-  min-height: 100vh;
+  min-height: 80vh;
 }
-
+.experience-section{
+  min-height: 50vh;
+}
 .btnText {
   font-size: 14px;
   font-weight: 400;
 }
-
+.heroContainer{
+  min-height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  padding-bottom: 100px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.7);
+}
 .normal-font {
   font-size: 14px;
   font-weight: 300;
@@ -33,10 +43,16 @@ body {
 .padLeft {
   padding-left: 80px;
 }
-
-.hero_imgContainer {
-  padding-left: 60px
+.phone{
+  height: 700px;
+  width: 400px;
+  margin-left: 100px;
+  justify-content: center;
+  align-items: center;
 }
+/* .hero_imgContainer {
+  padding-left: 60px
+} */
 .hero_txtContainer {
   padding-left: 100px
 }
@@ -65,7 +81,10 @@ body {
 #scrollspyHeading1{
   background-image: url(./components/assets/images/check2.jpg);
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
+  background-position: inherit;
+  width: auto;
+  height: auto;
 }
 /* scrollbar */
 ::-webkit-scrollbar {
@@ -101,8 +120,11 @@ body {
   .padLeft {
     padding-left: 0px;
   }
+  .generalHeight {
+    min-height: 70vh;
+  }
   .hero_txtContainer {
-    padding-left: 50px
+    padding-left: 10px
   }
   .card {
     height: auto;
@@ -115,13 +137,12 @@ body {
     padding-top: 0px;
     width: auto;
   }
-
   .box {
-    height: 400px;
-    width: 400px;
+    /* height: 300px;
+    width: 300px; */
     border-radius: 50%;
     border: 6px solid #5cb85c;
-    margin-left: 100px
+    /* margin-left: 100px */
   }
 }
 
@@ -132,6 +153,9 @@ body {
   .about-pad{
     padding: 50px;
   }
+  .generalHeight {
+    min-height: 50vh;
+  }
   .hero_imgContainer {
     display: none !important;
   }
@@ -139,13 +163,19 @@ body {
   .hero_txtContainer {
     padding-left: 0
   }
-
+  .phone{
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    padding-top: 5px;
+  }
   .aboutmetext {
     padding-top: 0px;
     padding: 30px;
     width: auto;
   }
-
   .aboutmeimg {
     padding-top: 0px;
   }
@@ -156,5 +186,12 @@ body {
     border-radius: 50%;
     border: 6px solid #5cb85c;
     margin: 20px;
+  }
+  #scrollspyHeading1{
+  background-size: calc(100vh);
+  background-repeat: no-repeat;
+  }
+  .remove{
+    display: none;
   }
 }

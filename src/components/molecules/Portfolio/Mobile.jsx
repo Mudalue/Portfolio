@@ -1,13 +1,6 @@
 import React from "react";
 import pawa from "../../assets/images/ pawa.png";
 const style = {
-  box: {
-    height: 700,
-    width: 400,
-    // borderRadius: "20px",
-    // border: "10px solid #DCDCDC",
-    marginLeft: 100,
-  },
   header: {
     fontSize: 25,
     fontWeight: 500,
@@ -28,7 +21,7 @@ const Mobile = () => {
     <>
       <div className="row" style={{ marginTop: 80, marginBottom: 80 }}>
         <div className="col-md-6">
-          <div style={{ marginTop: 100, width: 500 }} className="padLeft">
+          <div style={{ marginTop: 100, width: "auto" }} className="padLeft">
             {/* <h3 className="text-danger" style={style.header}>
               Project 1
             </h3> */}
@@ -48,7 +41,7 @@ const Mobile = () => {
           </div>
         </div>
         <div className="col-md-6">
-          <div style={style.box}>
+          <div className="phone">
             <img
               src={pawa}
               className="img-fluid"

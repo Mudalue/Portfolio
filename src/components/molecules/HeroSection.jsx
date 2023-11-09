@@ -2,15 +2,15 @@ import React, { useState, useEffect } from "react";
 import Img from "../assets/images/Pic1.jpg";
 import cv from "../assets/doc/Christian_cv.pdf";
 const style = {
-  container: {
-    minHeight: "100vh",
-    justifyContent: "flex-start",
-    alignItems: "center",
-    display: "flex",
-    paddingBottom: 100,
-    backdropFilter: "blur(5px)",
-    backgroundColor: "rgba(0, 0, 0, 0.7)",
-  },
+  // container: {
+  //   minHeight: "100vh",
+  //   justifyContent: "flex-start",
+  //   alignItems: "center",
+  //   display: "flex",
+  //   paddingBottom: 100,
+  //   backdropFilter: "blur(5px)",
+  //   backgroundColor: "rgba(0, 0, 0, 0.7)",
+  // },
   image: {
     height: 400,
     width: 400,
@@ -53,7 +53,7 @@ const HeroSection = () => {
   return (
     <>
       <div className="row">
-        <div className="col-md-6" style={style.container}>
+        <div className="col-md-6 heroContainer">
           <div className="animate__animated animate__fadeInLeft hero_txtContainer">
             {/* <h6 className="text-start text-secondary" style={style.smallerHeader}>
               I'm a
@@ -71,7 +71,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-6" style={style.container}>
+        <div className="col-md-6 col-sm-12 remove heroContainer">
           <div className="hero_imgContainer">
             <img src={Img} className="img-fluid box" alt="my_img" />
           </div>

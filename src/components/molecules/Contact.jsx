@@ -39,21 +39,21 @@ const Contact = () => {
   ];
   return (
     <div
-      className="container-fluid bg-danger generalHeight"
-      style={{ padding: 50, borderRadius: "100px 100px 0px 0px" }}
+      className="container-fluid"
+      style={{ padding: 50, backgroundColor: "#000"}}
     >
       <div className="row">
         <div className="col-md-12">
-          <h4 style={style.header} className="text-center text-light">
+          <h4 style={style.header} className="text-center text-danger" data-aos="fade-up" data-aos-duration="3000">
             Contact
           </h4>
         </div>
         <div className="col-md-12">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6" data-aos="zoom-in-right" data-aos-duration="3000">
               <h4
                 style={{ fontSize: 25, fontWeight: "600" }}
-                className="text-light"
+                className="text-secondary"
               >
                 Drop Me a Message
               </h4>
@@ -67,8 +67,8 @@ const Contact = () => {
               <div style={{ marginTop: 30 }}>
                 {contents.map((content) => (
                   <div style={{ display: "flex" }}>
-                    <button style={style.btn} className="btn mb-2" >
-                      <FontAwesomeIcon icon={content.icon} />
+                    <button style={style.btn} className="btn mb-2 bg-danger" >
+                      <FontAwesomeIcon icon={content.icon} className="text-light"/>
                     </button>
                     <p className="mx-2 normal-font text-light lh-lg">
                       {content.title}

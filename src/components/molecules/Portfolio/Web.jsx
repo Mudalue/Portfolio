@@ -4,10 +4,10 @@ import kita from "../../assets/images/kita.png";
 import tgf from "../../assets/images/tgf.png";
 const style = {
   box: {
-    height: 400,
-    width: 400,
-    // borderRadius: "20px",
-    // border: "10px solid #DCDCDC",
+    height: 218,
+    width: 'auto!important',
+    borderRadius: "10px",
+    border: "4px solid #5cb85c",
     // marginLeft: 100,
     paddingTop: 10,
   },
@@ -21,19 +21,16 @@ const style = {
   },
   img: {
     height: 200,
-    width: "",
+    width: "auto",
     borderRadius: "5px",
   },
 };
 const Web = () => {
   return (
     <>
-      <div className="row" style={{ marginTop: 80, marginBottom: 80 }}>
+      <div className="row" style={{ marginTop: 100, marginBottom: 100 }}>
         <div className="col-md-6">
           <div style={{ marginTop: 50 }} className="padLeft">
-            {/* <h3 className="text-danger" style={style.header}>
-              Project 1
-            </h3> */}
             <div data-aos="fade-left" data-aos-duration="3000">
               <h6 style={style.header2} className="text-secondary">
                 Afiqhub
@@ -68,7 +65,7 @@ const Web = () => {
         </div>
       </div>
 
-      <div className="row" style={{ marginTop: 80, marginBottom: 80 }}>
+      <div className="row" style={{ marginTop: 100, marginBottom: 100 }}>
         <div className="col-md-6 d-flex justify-content-center align-items-center my-2">
           <div style={style.box}>
             <img
@@ -81,9 +78,6 @@ const Web = () => {
         </div>
         <div className="col-md-6">
           <div style={{ marginTop: 30 }}>
-            {/* <h3 className="text-danger" style={style.header}>
-              Project 2
-            </h3> */}
             <div data-aos="fade-right" data-aos-duration="3000">
               <h6 style={style.header2} className="text-secondary">
                 Kita
@@ -110,12 +104,9 @@ const Web = () => {
         </div>
       </div>
 
-      <div className="row" style={{ marginTop: 80, marginBottom: 80 }}>
+      <div className="row" style={{ marginTop: 100, marginBottom: 100 }}>
         <div className="col-md-6">
           <div style={{ marginTop: 50 }} className="padLeft">
-            {/* <h3 className="text-danger" style={style.header}>
-              Project 3
-            </h3> */}
          <div data-aos="fade-left" data-aos-duration="3000">
          <h6 style={style.header2} className="text-secondary">
               TGF Stores
@@ -125,15 +116,6 @@ const Web = () => {
               allow users to purchase items online
             </p>
          </div>
-            {/* <span className="normal-font cursor">
-              Link:{" "}
-              <a
-                href="https://tgf-demo.vercel.app/"
-                className="text-decoration-none text-danger text-sm "
-              >
-                https://tgf-demo.vercel.app/
-              </a>
-            </span> */}
           </div>
         </div>
         <div className="col-md-6 d-flex justify-content-center align-items-center my-2">
